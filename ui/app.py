@@ -11,7 +11,7 @@ if st.button("Analyze Portfolio"):
         with st.spinner(f"Analyzing {username}'s repositories..."):
             try:
                 # IMPORTANT: We will change this URL in Phase 4!
-                response = requests.post(f"https://agent-01.onrender.com")
+                response = requests.post("https://agent-01.onrender.com")
                 
                 if response.status_code == 200:
                     data = response.json()
